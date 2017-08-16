@@ -57,6 +57,7 @@ public class Main {
   @RequestMapping("/db")
   String db(Map<String, Object> model) {
     // commit test
+    // commit test2
     try (Connection connection = dataSource.getConnection()) {
       Statement stmt = connection.createStatement();
       stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
